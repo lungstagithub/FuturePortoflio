@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    vertical-align: baseline;
+    text-decoration: none;
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    font-family: Poppins;
+}
+
+body {
+    width: 100%;
+    background: #0e0e0e;
+}
+
+i {
+    color: #fff;
+}
+
+.menu {
+    position: fixed;
+    right: -300px;
+    width: 240px;
+    height: 87%;
+    top: 2%;
+    z-index: 900;
+    background: #151515;
+    box-shadow: 0px 5px 7px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 2em;
+    -webkit-transition: all .4s ease-in-out;
+}
+.menu .Title {
+    font-size: 14px;
+    color: aqua;
+    font-family: "montserrat-medium", sans-serif;
+}
+.menu .content {
+    color: rgba(255, 255, 255, 0.726);
+    font-size: 13px;
+    font-family: "montserrat-medium", sans-serif;
+}
+.content b {
+    color: #fff;
+}
+.social-links {
+    margin: 80px 0px;
+    text-align: center;
+}
+.social-links li {
+    color: white;
+    display: inline;
+    padding: 23px;
+}
+
+.social-links a {
+    color: white;
+    transition: all .4s ease-in-out;
+}
+.social-links a:hover {
+    padding: 0em 1em;
+} 
+hr {
+    border: 1px solid rgba(0, 255, 255, 0.226);
+}
+.menu-links {
+    list-style: none;
+    margin: 103px 0px;
+}
+.menu-links li {
+    display: block;
+    padding: 1em 0em;
+}
+.menu-links a {
+    color: white;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
+    font-family: "montserrat-medium", sans-serif;
+    -webkit-transition: all .4s ease-in-out;
+}
+.menu-links a:hover {
+    padding: 0em 1em;
+    color: rgba(255, 255, 255, 0.616);
+}
+.menu-open {
+    right: 0;
+}
+.wrapper {
+    width: 90%;
+    margin: 1em 3.5em;
+    background: #151515;
+    border-radius: 10px;
+    box-shadow: 2px 8px 7px rgba(0,0,0,0.5);
+    transition: all .4s ease-in-out;
+}
+.wrapper-slide {
+    margin: 1em -13em;
+}
+.nav-bar {
+    display: block;
+    width: inherit;
+    padding: 3em;
+    /* background: red; */
+}
+.nav-bar a {
+    color: #fff;
+    font-family: sans-serif;
+}
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+}
+.bar::before {
+    width: 30px;
+    height: 3px;
+    top: 25px;
+    background-color: #fff;
+}
+
+.nav-bar :nth-child(2)
+{
+    float: right;
+    transition: all .4s ease-in-out;
+}
+.nav-bar :nth-child(2):hover {
+    transform: rotate(180deg) scale(1.2);
+}
+
+.header {
+    color: #fff;
+    
+    margin: 130px 20px 80px 50px;
+    
+}
+.header h1 {
+    font-size: 35px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 23px;
+}
+.header p {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.726);
+}
+.two {
+    text-align: center;
+}
+
+.showcase {
+    margin: 20px 20px;
+    text-align: center;
+}
+.showcase img {
+    margin: 5px 5px;
+    width: 300px;
+    height: 300px;
+}
+.big img {
+    margin: 0;
+    width: 100%;
+    height: 400px;
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.651);
+    text-align: center;
+    padding: 3em 3em;
+    font-size: 11px;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+}
+
+@media only screen and (max-width: 1020px) {
+    .wrapper {
+        margin: 1em 3em;
+    }
+    .header {
+        margin: 80px 12px 80px 20px;
+    }
+}
+@media only screen and (max-width: 920px) {
+    .wrapper {
+        margin: 1em 2.6em;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .wrapper {
+        margin: 1em 2em;
+    }
+    .nav-bar {
+        width: 92%;
+        padding: 3em 2em;
+    }
+    .nav-bar :nth-child(2) {
+        margin-right: 20px;
+    }
+
+    .header {
+        margin: 80px 12px 80px 20px;
+    }
+    .header h1 {
+        font-size: 20px;
+    }
+    .header p {
+        font-size: 13px;
+    }
+
+    .menu-open {
+        width: 190px;
+    }
+    .wrapper-slide {
+        margin: 1em -13em;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .wrapper {
+        margin: 1em 1.4em;
+        width: 90%;
+    }
+
+    .nav-bar {
+        width: 100%;
+        padding: 1em 0.05em;
+    }
+    .nav-bar :nth-child(1) {
+        margin-left: 23px;
+    }
+    .nav-bar :nth-child(2) {
+        margin-right: 20px;
+    }
+    .header {
+        margin: 80px 12px 80px 20px;
+    }
+    .header h1 {
+        font-size: 20px;
+    }
+    .header p {
+        font-size: 13px;
+    }
+    .showcase img {
+        width: 200px;
+        height: 200px;
+    }
+    .big img {
+        width: 100%;
+    }
+
+    .menu-open {
+        width: 190px;
+    }
+    .menu-links {
+        margin-top: 2em;
+        margin-bottom: 2em; 
+    }
+    .menu .content {
+        font-size: 12px;
+    }
+    .menu-links li {
+        padding: 0.2em 0em;
+    }
+    .wrapper-slide {
+        margin: 1em -13em;
+    }
+    .social-links {
+        margin: 27px 0px;
+        text-align: center;
+    }
+    .social-links li {
+        color: white;
+        display: inline;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .menu {
+        width: 180px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .wrapper {
+        margin: 1em 0.5em;
+        width: 95%;
+    }
+    .nav-bar {
+        padding: 1em 0.05em;
+    }
+    .nav-bar :nth-child(1) {
+        margin-left: 23px;
+    }
+    .header {
+        margin: 80px 0 40px 10px;
+    }
+    .header h1 {
+        font-size: 20px;
+    }
+    .header p {
+        font-size: 13px;
+    }
+    .showcase img {
+        width: 200px;
+        height: 200px;
+    }
+    .big img {
+        width: 100%;
+    }
+
+    .menu-open {
+        width: 150px;
+    }
+    .menu-links {
+        margin-top: 2em;
+        margin-bottom: 2em; 
+    }
+    .menu .content {
+        font-size: 12px;
+    }
+    .menu-links li {
+        padding: 0.2em 0em;
+    }
+    .wrapper-slide {
+        margin: 1em -13em;
+    }
+    .social-links {
+        margin: 27px 0px;
+        text-align: center;
+    }
+    .social-links li {
+        color: white;
+        display: inline;
+        padding: 10px;
+    }
+}
